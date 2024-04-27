@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LAP_Fragenkatalog.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="lap-fragenkatalog---it-systemtechnikerbetriebstechniker">LAP Fragenkatalog - IT Systemtechniker/Betriebstechniker</h1>
+<ul>
+<li><a href="#lap-fragenkatalog---it-systemtechnikerbetriebstechniker">LAP Fragenkatalog - IT Systemtechniker/Betriebstechniker</a></li>
+<li><a href="#1-allgemeiner-teil---informationstechnologie">1. Allgemeiner Teil - Informationstechnologie</a>
+<ul>
+<li><a href="#11-ergonomische-gestaltung-eines-arbeitsplatzes">1.1 Ergonomische Gestaltung eines Arbeitsplatzes</a>
+<ul>
+<li><a href="#111-ergonomische-einrichtung-eines-bildschirmarbeitsplatzes">1.1.1 Ergonomische Einrichtung eines Bildschirmarbeitsplatzes</a></li>
+<li><a href="#112-optimaler-aufstellungsort-von-bildschirmen-lichteinfall">1.1.2 Optimaler Aufstellungsort von Bildschirmen (Lichteinfall)</a></li>
+<li><a href="#113-gesetzliche-bestimmungen-von-pausen-bei-bildschirmarbeit">1.1.3 Gesetzliche Bestimmungen von Pausen bei Bildschirmarbeit</a></li>
+<li><a href="#114-schutzma%C3%9Fnahmen-und-k%C3%B6rperliche-entspannungs%C3%BCbungen">1.1.4 Schutzmaßnahmen und körperliche Entspannungsübungen</a></li>
+</ul>
+</li>
+<li><a href="#12-arbeitssicherheit-und-schutzma%C3%9Fnahmen">1.2 Arbeitssicherheit und Schutzmaßnahmen</a>
+<ul>
+<li><a href="#121-arbeitssicherheit-und-schutzma%C3%9Fnahmen">1.2.1 Arbeitssicherheit und Schutzmaßnahmen</a></li>
+<li><a href="#122-kenntnisse-%C3%BCber-wirkungsweise-und-gefahren-des-elektrischen-stroms">1.2.2 Kenntnisse über Wirkungsweise und Gefahren des elektrischen Stroms</a>
+<ul>
+<li><a href="#mensch-im-stromkreis">Mensch im Stromkreis</a></li>
+<li><a href="#gesetze-und-vorschriften">Gesetze und Vorschriften</a></li>
+<li><a href="#elektroschutzkonzept">Elektroschutzkonzept</a></li>
+<li><a href="#schutz-gegen-direktes-ber%C3%BChren---basisschutz">Schutz gegen direktes Berühren - Basisschutz</a></li>
+<li><a href="#schutz-bei-indirektem-ber%C3%BChren---fehlerschutz">Schutz bei indirektem Berühren - Fehlerschutz</a></li>
+<li><a href="#schutzklassen-elektrischer-ger%C3%A4te">Schutzklassen elektrischer Geräte</a></li>
+</ul>
+</li>
+<li><a href="#123-kenntnisse-%C3%BCber-verhalten-und-ma%C3%9Fnahmen-bei-einem-elektrounfall-reihenfolge">1.2.3 Kenntnisse über Verhalten und Maßnahmen bei einem Elektrounfall (Reihenfolge)</a>
+<ul>
+<li><a href="#rettungsvorgang">Rettungsvorgang</a></li>
+<li><a href="#zus%C3%A4tzliche-sicherheitshinweise">Zusätzliche Sicherheitshinweise:</a></li>
+</ul>
+</li>
+<li><a href="#124-kenntnisse-%C3%BCber-gefahren-bei-einem-brand-und-richtiges-verhalten-beim-brandfall-reihenfolge">1.2.4 Kenntnisse über Gefahren bei einem Brand und richtiges Verhalten beim Brandfall (Reihenfolge)</a></li>
+<li><a href="#125-kenntnisse-%C3%BCber-co2--und-pulver-feuerl%C3%B6scher">1.2.5 Kenntnisse über CO2- und Pulver-Feuerlöscher</a></li>
+<li><a href="#126-richtige-verwendung-von-feuerl%C3%B6schern-bei-elektrischen-anlagen">1.2.6 Richtige Verwendung von Feuerlöschern bei elektrischen Anlagen</a></li>
+<li><a href="#127-richtiger-umgang-und-korrekte-lagerung-von-akkus-oder-batterien">1.2.7 Richtiger Umgang und korrekte Lagerung von Akkus oder Batterien</a></li>
+<li><a href="#128-kenntnisse-%C3%BCber-umweltgerechte-entsorgung-von-elektronikschrott-toner-akkus-oder-batterien">1.2.8 Kenntnisse über umweltgerechte Entsorgung von Elektronikschrott, Toner, Akkus oder Batterien</a></li>
+<li><a href="#129-kenntnisse-%C3%BCber-arbeitsrechtliche-gesetze-kjbg-aschg-glbg">1.2.9 Kenntnisse über arbeitsrechtliche Gesetze (KJBG, ASchG, GlBG)</a></li>
+</ul>
+</li>
+<li><a href="#13-technische-dokumentation">1.3 Technische Dokumentation</a>
+<ul>
+<li><a href="#131-aufgabe-und-strukturierung-von-testl%C3%A4ufen">1.3.1 Aufgabe und Strukturierung von Testläufen</a></li>
+<li><a href="#132-inhalt-einer-technischen-dokumentationeines-technischen-protokolls">1.3.2 Inhalt einer technischen Dokumentation/eines technischen Protokolls</a></li>
+<li><a href="#133-aufbereitung-einer-technischen-dokumentationeines-technischen-protokolls">1.3.3 Aufbereitung einer technischen Dokumentation/eines technischen Protokolls</a></li>
+<li><a href="#134-anwendung-der-schrittaufzeichnungstep-recorder">1.3.4 Anwendung der Schrittaufzeichnung/Step Recorder</a></li>
+<li><a href="#135-beilagen-technischer-dokumentationen-testprotokoll-netzwerkplan-">1.3.5 Beilagen technischer Dokumentationen (Testprotokoll, Netzwerkplan, …)</a></li>
+<li><a href="#136-gestaltung-und-vorbereitung-von-pr%C3%A4sentationen">1.3.6 Gestaltung und Vorbereitung von Präsentationen</a></li>
+</ul>
+</li>
+<li><a href="#14-datenschutzgrundverordnung-dsgvo">1.4 Datenschutzgrundverordnung (DSGVO)</a>
+<ul>
+<li><a href="#141-aktuelle-dsgvo">1.4.1 Aktuelle DSGVO</a></li>
+<li><a href="#142-datenminimierung">1.4.2 Datenminimierung</a></li>
+<li><a href="#143-fachbegriffe-laut-dsgvo">1.4.3 Fachbegriffe laut DSGVO</a></li>
+<li><a href="#144-rechte-von-betroffenen-personen">1.4.4 Rechte von betroffenen Personen</a></li>
+<li><a href="#145-personenbezogene-und-sensible-daten">1.4.5 Personenbezogene und sensible Daten</a></li>
+<li><a href="#146-kopplungsverbot">1.4.6 Kopplungsverbot</a></li>
+<li><a href="#147-datenschutzbeauftragter">1.4.7 Datenschutzbeauftragter</a></li>
+<li><a href="#148-pflichten-bei-datendiebstahl">1.4.8 Pflichten bei Datendiebstahl</a></li>
+<li><a href="#149-weitere-rechtliche-grundlagen">1.4.9 Weitere rechtliche Grundlagen</a></li>
+</ul>
+</li>
+<li><a href="#15-fachbegriffe-und-grundlagen-in-der-informationstechnik">1.5 Fachbegriffe und Grundlagen in der Informationstechnik</a>
+<ul>
+<li><a href="#151-fachbegriff-big-data">1.5.1 Fachbegriff Big Data</a></li>
+<li><a href="#152-fachbegriff-web-20">1.5.2 Fachbegriff Web 2.0</a></li>
+<li><a href="#153-fachbegriff-industrie-40">1.5.3 Fachbegriff Industrie 4.0</a></li>
+<li><a href="#154-fachbegriff-iot-internet-of-things">1.5.4 Fachbegriff IoT (Internet of Things)</a></li>
+<li><a href="#155-sprachassistenten-vor--und-nachteile">1.5.5 Sprachassistenten: Vor- und Nachteile</a></li>
+<li><a href="#156-e-government-digitale-signatur-und-handy-signatur">1.5.6 e-Government, digitale Signatur und Handy-Signatur</a></li>
+<li><a href="#157-schutzm%C3%B6glichkeiten-von-cookie-tracking-und-cookieless-tracking">1.5.7 Schutzmöglichkeiten von Cookie-Tracking und Cookieless-Tracking</a></li>
+<li><a href="#158-gefahr-von-identit%C3%A4tsdiebstahl">1.5.8 Gefahr von Identitätsdiebstahl</a></li>
+<li><a href="#159-fachbegriff-netzneutralit%C3%A4t">1.5.9 Fachbegriff Netzneutralität</a></li>
+<li><a href="#1510-nutzung-von-biometrischen-daten-vor--und-nachteile">1.5.10 Nutzung von biometrischen Daten: Vor- und Nachteile</a>
+<ul>
+<li><a href="#vorteile-der-nutzung-von-biometrischen-daten">Vorteile der Nutzung von biometrischen Daten</a></li>
+<li><a href="#nachteile-der-nutzung-von-biometrischen-daten">Nachteile der Nutzung von biometrischen Daten</a></li>
+</ul>
+</li>
+<li><a href="#1511-unternehmensrichtlinien-f%C3%BCr-nutzung-von-sozialen-netzwerken">1.5.11 Unternehmensrichtlinien für Nutzung von sozialen Netzwerken</a>
+<ul>
+<li><a href="#verhalten-und-kommunikation">Verhalten und Kommunikation</a></li>
+<li><a href="#vertraulichkeit-und-professionelles-image">Vertraulichkeit und professionelles Image</a></li>
+<li><a href="#interessenkonflikte-und-rechtliche-compliance">Interessenkonflikte und rechtliche Compliance</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#16-datenaustausch">1.6 Datenaustausch</a>
+<ul>
+<li><a href="#161-m%C3%B6glichkeiten-des-datenaustausches">1.6.1 Möglichkeiten des Datenaustausches</a>
+<ul>
+<li><a href="#kabelgebundene-systeme">Kabelgebundene Systeme</a></li>
+<li><a href="#kabellose-systeme">Kabellose Systeme</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div style="page-break-after: always;"></div>
+<h1 id="1-allgemeiner-teil---informationstechnologie">1. Allgemeiner Teil - Informationstechnologie</h1>
+<h2 id="11-ergonomische-gestaltung-eines-arbeitsplatzes">1.1 Ergonomische Gestaltung eines Arbeitsplatzes</h2>
+<h3 id="111-ergonomische-einrichtung-eines-bildschirmarbeitsplatzes">1.1.1 Ergonomische Einrichtung eines Bildschirmarbeitsplatzes</h3>
+<blockquote>
+<p>Die ergonomische Einrichtung eines Arbeitsplatzes beginnt mit der richtigen Auswahl und Anordnung der Möbel und Geräte:</p>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>Stuhl</strong>: Ein ergonomischer Bürostuhl ist essentiell. Er sollte <strong>höhenverstellbar</strong> sein und eine gute <strong>Lendenwirbelstütze</strong> bieten. Der Stuhl sollte es ermöglichen, dass die <strong>Füße flach auf dem Boden</strong> stehen können, während die <strong>Knie etwa im rechten Winkel</strong> gebeugt sind.</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>Schreibtisch</strong>: Die Höhe des Schreibtisches sollte so eingestellt werden, dass die <strong>Unterarme parallel zum Boden</strong> sind, wenn Sie auf der Tastatur tippen. Dies verhindert eine Überbeanspruchung der Handgelenke.</li>
+</ul>
+</blockquote>
+<h3 id="112-optimaler-aufstellungsort-von-bildschirmen-lichteinfall">1.1.2 Optimaler Aufstellungsort von Bildschirmen (Lichteinfall)</h3>
+<blockquote>
+<p>Die Positionierung des Bildschirms ist entscheidend, um Reflexionen und Blendungen zu minimieren, die Augenbelastungen verursachen können:</p>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>Position</strong>: Der Bildschirm sollte so positioniert werden, dass <strong>Fenster seitlich</strong> davon liegen, nicht direkt davor oder dahinter. Dadurch wird direkter Lichteinfall und Blendung durch Sonnenlicht vermieden.</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>Entfernung und Höhe</strong>: Der Bildschirm sollte etwa <strong>eine Armlänge entfernt</strong> sein. Die <strong>Oberkante</strong> des Bildschirms sollte auf oder <strong>leicht unter Augenhöhe</strong> sein, um den Hals und die Augen zu schonen.</li>
+</ul>
+</blockquote>
+<h3 id="113-gesetzliche-bestimmungen-von-pausen-bei-bildschirmarbeit">1.1.3 Gesetzliche Bestimmungen von Pausen bei Bildschirmarbeit</h3>
+<blockquote>
+<p>In vielen Ländern gibt es gesetzliche Regelungen, die Pausen für Bildschirmarbeiter vorschreiben, um Überanstrengung und Ermüdung der Augen zu vermeiden. In der Regel wird empfohlen:</p>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>Kurze Pausen</strong> von <strong>5-10 Minuten nach jeweils einer Stunde</strong> kontinuierlicher Bildschirmarbeit.</li>
+<li><strong>Regelmäßige längere Pausen</strong> und die Möglichkeit, den Arbeitsplatz oder die Arbeitshaltung zu wechseln.</li>
+</ul>
+</blockquote>
+<h3 id="114-schutzma%C3%9Fnahmen-und-k%C3%B6rperliche-entspannungs%C3%BCbungen">1.1.4 Schutzmaßnahmen und körperliche Entspannungsübungen</h3>
+<blockquote>
+<p>Um körperlichen Schäden vorzubeugen, sind regelmäßige Bewegungspausen wichtig.</p>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>Mikropausen</strong>: Kurze Pausen einlegen, um aufzustehen, sich zu strecken und die Position zu wechseln.</li>
+<li><strong>Augenübungen</strong>: Regelmäßiges Fokussieren auf entfernte Objekte, um die Augenmuskulatur zu entspannen.</li>
+<li><strong>Rückenübungen</strong>: Einfache Dehnungsübungen für den Rücken und die Schultern können helfen, Verspannungen zu lösen und die Blutzirkulation zu fördern.</li>
+</ul>
+</blockquote>
+<h2 id="12-arbeitssicherheit-und-schutzma%C3%9Fnahmen">1.2 Arbeitssicherheit und Schutzmaßnahmen</h2>
+<h3 id="121-arbeitssicherheit-und-schutzma%C3%9Fnahmen">1.2.1 Arbeitssicherheit und Schutzmaßnahmen</h3>
+<blockquote>
+<p>Arbeitssicherheit umfasst alle Maßnahmen und Vorkehrungen, die darauf abzielen, <strong>Unfälle am Arbeitsplatz zu verhindern</strong> und die <strong>Gesundheit der Mitarbeiter zu schützen</strong>. Wichtige Schutzmaßnahmen beinhalten:</p>
+<ul>
+<li>Regelmäßige <strong>Schulungen und Unterweisungen</strong> der Mitarbeiter.</li>
+<li>Bereitstellung und Verwendung <strong>persönlicher Schutzausrüstung</strong> (PSA).</li>
+<li>Sicherstellung, dass alle Geräte und Maschinen <strong>regelmäßig gewartet und geprüft</strong> werden.</li>
+<li>Ergonomische Gestaltung des Arbeitsplatzes.</li>
+</ul>
+</blockquote>
+<h3 id="122-kenntnisse-%C3%BCber-wirkungsweise-und-gefahren-des-elektrischen-stroms">1.2.2 Kenntnisse über Wirkungsweise und Gefahren des elektrischen Stroms</h3>
+<h4 id="mensch-im-stromkreis">Mensch im Stromkreis</h4>
+<blockquote>
+<p>Elektrischer Strom kann <strong>lebensgefährliche Verletzungen</strong> wie <strong>Verbrennungen, elektrische Schocks</strong> und andere <strong>physische Schäden</strong> verursachen. Wichtig ist das Verständnis darüber, dass bereits geringe Stromstärken gefährlich sein können. Sicherheitsmaßnahmen beinhalten:</p>
+<ul>
+<li><strong>Vermeidung von Kontakt mit spannungsführenden Teilen</strong>.</li>
+<li>Einsatz von <strong>isolierenden Schutzausrüstungen</strong>.</li>
+<li>Sicherstellung, dass die elektrischen Installationen den <strong>geltenden Normen</strong> entsprechen.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>In öffentlichen Stromnetzen, bei denen ein Pol geerdet ist, kann der Stromkreis über leitende Objekte wie Wasserleitungen geschlossen werden. Die Stromstärke, die durch den menschlichen Körper fließt, hängt gemäß dem Ohmschen Gesetz von der Spannung und Faktoren ab, die den Körperwiderstand beeinflussen:</p>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>Berührungsfläche</strong>: Größere Flächen reduzieren den Widerstand.</li>
+<li><strong>Berührungsdruck</strong>: Starker Druck senkt den Widerstand.</li>
+<li><strong>Feuchtigkeit</strong>: Nässe verringert den Widerstand.</li>
+<li><strong>Spannung</strong>: Höhere Spannungen senken den Widerstand.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>Der <strong>Körperwiderstand</strong> kann stark variieren und ist schwer vorhersehbar, typischerweise <strong>zwischen einigen hundert Ohm und 10 kΩ</strong>, abhängig von Hautbedingungen und Kontaktfläche.</p>
+</blockquote>
+<blockquote>
+<p>Bei 230 V Netzspannung können Ströme von einigen Milliampere bis zu einem halben Ampere durch den Körper fließen, wobei die Auswirkungen von Stromstärke, Dauer und Weg des Stroms durch den Körper abhängen.</p>
+</blockquote>
+<blockquote>
+<p>Bei <strong>Wechselstrom von 50 Hertz</strong> und einer <strong>Einwirkdauer von über einer Sekunde</strong> zeigen sich folgende Effekte bei verschiedenen Stromstärken:</p>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>ca. 1 mA</strong>: Wahrnehmung und Schmerz beginnen.</li>
+<li><strong>ca. 15 mA</strong>: Kritische Schwelle; unwillkürliche Muskelkontraktionen können &gt;dazu führen, dass man einen leitenden Gegenstand nicht loslassen kann.</li>
+<li><strong>ca. 40 mA</strong>: Lebensgefahr durch Kammerflimmern, das zu einer unkoordinierten Herztätigkeit und schnellem Tod durch Sauerstoffmangel im Gehirn führen kann.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>Die Vorschriften setzen sichere <strong>Grenzwerte für nicht lebensgefährliche Körperströme</strong> bei <strong>65 V für Wechselstrom und 120 V für Gleichstrom</strong> fest. Kurze Stromstöße unter 0,2 Sekunden werden besser toleriert.</p>
+</blockquote>
+<h4 id="gesetze-und-vorschriften">Gesetze und Vorschriften</h4>
+<blockquote>
+<p>In Österreich müssen nach dem Elektrotechnikgesetz alle neuen oder wesentlich geänderten elektrischen <strong>Anlagen und Betriebsmittel</strong> den <strong>nationalen (OVE), europäischen (EN) oder internationalen Normen</strong> entsprechen, die gesetzlichen Charakter haben. Hersteller und Verkäufer haften für die Einhaltung dieser Vorschriften. Das <strong>ÖVE-Prüfzeichen</strong>, vergeben von autorisierten Stellen, bestätigt die Übereinstimmung eines Geräts mit diesen Vorschriften.</p>
+</blockquote>
+<h4 id="elektroschutzkonzept">Elektroschutzkonzept</h4>
+<blockquote>
+<p><strong>Ziel:</strong> Schutz vor Gefahren durch elektrischen Strom.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Unfallgefahr</th>
+<th>Schutzmaßnahme</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Direktes Berühren aktiver Leiter (leitende Teile mit Betriebsspannung)</td>
+<td><strong>Basisschutz</strong>: Schutz gegen direktes Berühren.</td>
+</tr>
+<tr>
+<td>Berührungsspannung an inaktiven Teilen durch Isolationsfehler</td>
+<td><strong>Fehlerschutz</strong>: Schutz bei indirektem Berühren.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Basisschutz</strong>: Verhindert direktes Berühren spannungsführender Teile durch Isolierung, Abdeckungen und Montage außerhalb der Reichweite.</p>
+</blockquote>
+<blockquote>
+<p><strong>Fehlerschutz</strong>: Schützt gegen Spannung an Gehäusen und Geräten bei Isolationsfehlern durch Maßnahmen wie Schutzisolierung, Schutz- und Funktionskleinspannung, Schutzerdung, Schutztrennung, Nullung und Fehlerstromschutzschaltungen.</p>
+</blockquote>
+<blockquote>
+<p><strong>Zusatzschutz</strong>: Tritt bei Versagen von Basis- oder Fehlerschutz in Kraft, besonders in gefährlichen Umgebungen, einschließlich Fehlerstromschutzschalter und lokalem Potenzialausgleich.</p>
+</blockquote>
+<h4 id="schutz-gegen-direktes-ber%C3%BChren---basisschutz">Schutz gegen direktes Berühren - Basisschutz</h4>
+<blockquote>
+<p><strong>Ziel</strong>: Schützen von Personen vor elektrischem Strom durch zufällige Berührung aktiver Leiter.</p>
+</blockquote>
+<blockquote>
+<p><strong>Methoden</strong>:</p>
+<ul>
+<li><strong>Isolierung</strong>: Anwendung von Isoliermaterialien, insbesondere bei Leitungen.</li>
+<li><strong>Abdeckungen (Gehäuse)</strong>: Verhindert Berührung aktiver Teile, wobei Lüftungsschlitze so klein sein müssen, dass kein Kontakt mit spannungsführenden Teilen möglich ist.</li>
+<li><strong>Montage außer Handbereich</strong>: Platzierung aktiver Leiter so, dass sie nicht erreicht werden können, z.B. bei Freileitungen.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>Zusätzliche Schutzmaßnahmen</strong>:</p>
+<ul>
+<li>Bei Arbeitsumgebungen mit sperrigen Gegenständen müssen Abstände vergrößert werden.</li>
+<li><strong>Basisisolierung</strong> muss vor <strong>mechanischer Beschädigung und Überhitzung geschützt</strong> werden und soll den <strong>betrieblichen Belastungen standhalten</strong>.</li>
+<li>Leitungen und <strong>Geräte</strong> müssen <strong>entsprechend der erwarteten Beanspruchung</strong> ausgewählt werden.</li>
+<li>Bewegliche Leitungen benötigen <strong>Zug- und Schubentlastung sowie Knickschutz</strong>.</li>
+<li>Bei Steckverbindungen auf Nennstrom achten und Klemmen fest anziehen.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>Sicherheitsregeln für Arbeiten an elektrischen Anlagen:</p>
+<ul>
+<li><strong>Abschalten</strong>: Allpolig und allseitig.</li>
+<li><strong>Gegen Wiedereinschalten sichern</strong>.</li>
+<li><strong>Auf Spannungsfreiheit prüfen</strong>.</li>
+<li><strong>Erden und Kurzschließen</strong>.</li>
+<li><strong>Benachbarte spannungsführende Teile abdecken und Gefahrenstellen eingrenzen</strong>.</li>
+</ul>
+</blockquote>
+<h4 id="schutz-bei-indirektem-ber%C3%BChren---fehlerschutz">Schutz bei indirektem Berühren - Fehlerschutz</h4>
+<blockquote>
+<p><strong>Hintergrund</strong>: Indirektes Berühren tritt auf, wenn bei einem elektrischen Gerät der Schutzklasse 1 ein Körperschluss vorliegt – eine Verbindung zwischen einem aktiven Leiter und dem Gehäuse durch einen Fehler in der Basisisolierung. Dadurch kann das Gehäuse unter Spannung stehen.</p>
+</blockquote>
+<blockquote>
+<p><strong>Spannungsarten</strong>:</p>
+<ul>
+<li><strong>Fehlerspannung (UF)</strong>: Spannung zwischen äußeren leitfähigen Teilen und Bezugserde bei Isolationsfehlern.</li>
+<li><strong>Berührungsspannung (UT)</strong>: Spannung, die am Körper auftritt, wenn dieser von Strom durchflossen wird. Diese Spannung ist potenziell gefährlich und kann unter ungünstigen Umständen so hoch wie die Fehlerspannung sein.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>Ursachen für Isolationsfehler</strong>:</p>
+<ul>
+<li>Überlastung und hohe Temperaturen.</li>
+<li>Schlechte Behandlung und Alterung des Gerätes.</li>
+<li>Fehlen von Zugentlastung und Knickschutz.</li>
+<li>Einwirkung von Schmutz und Feuchtigkeit, die Kriechströme verursachen.</li>
+<li>Beschädigte Anschlussklemmen.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>Risikobereiche</strong>: Besonders hoch ist das Risiko im Freien und in feuchten Umgebungen wie Bädern, Werkstätten, Kesselhäusern und Baustellen, wo leicht eine Erdverbindung entstehen kann.</p>
+</blockquote>
+<blockquote>
+<p><strong>Schutzmaßnahmen</strong>:</p>
+<ul>
+<li><strong>Basisisolierung</strong>: Eine einwandfreie und dauerhafte Isolierung ist essentiell.</li>
+<li><strong>Errichtung der Anlage</strong>: Sorgfältige Installation und Wartung elektrischer Anlagen zur Minimierung von Risiken.</li>
+<li><strong>Fehlerschutz</strong>: Notwendige Sicherheitsmaßnahmen für den Fall eines Körperschlusses, besonders bei Geräten und Anlagen mit Nennspannungen über 65 V Wechselstrom und 120 V Gleichstrom gegen Erde, da hier Fehlerschutz gesetzlich vorgeschrieben ist.</li>
+</ul>
+</blockquote>
+<h4 id="schutzklassen-elektrischer-ger%C3%A4te">Schutzklassen elektrischer Geräte</h4>
+<blockquote>
+<p><strong>Schutzklassen elektrischer Geräte</strong></p>
+<p>Elektrische Geräte werden in drei Schutzklassen eingeteilt, die angeben, welcher Fehlerschutz vorgesehen ist:</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Schutzklasse</th>
+<th>Ausführung</th>
+<th>Anschlussleitung</th>
+<th>Stecker</th>
+<th>Beispiele</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I</td>
+<td>Betriebsisolation, Anschlussklemme für Schutzleiter</td>
+<td>Mit Schutzleiter</td>
+<td>Schutzkontaktstecker mit Schutzleiter</td>
+<td>Waschmaschinen, Elektroherde, Personal Computer</td>
+</tr>
+<tr>
+<td>II</td>
+<td>Schutzisoliert, doppelte/verstärkte Isolation, keine Schutzleiterklemme</td>
+<td>Kein Schutzleiter</td>
+<td>Konturen- oder Flachstecker, eventuell Schukostecker</td>
+<td>Handwerkzeuge, Küchengeräte, Audio- und Videogeräte</td>
+</tr>
+<tr>
+<td>III</td>
+<td>Für Kleinspannung bis 50 V, keine Schutzleiterklemme</td>
+<td>Kein Schutzleiter</td>
+<td>Stecker, die nicht in höhere Spannungssteckdosen passen</td>
+<td>Kinderspielzeug, Notebook, Geräte mit externem Netzteil</td>
+</tr>
+</tbody>
+</table>
+<h3 id="123-kenntnisse-%C3%BCber-verhalten-und-ma%C3%9Fnahmen-bei-einem-elektrounfall-reihenfolge">1.2.3 Kenntnisse über Verhalten und Maßnahmen bei einem Elektrounfall (Reihenfolge)</h3>
+<h4 id="rettungsvorgang">Rettungsvorgang</h4>
+<blockquote>
+<p><strong>Den Verunglückten aus dem Stromkreis befreien:</strong></p>
+<ul>
+<li>Bei Spannungen bis 1000 V den Stecker ziehen oder die Anlage abschalten.</li>
+<li>Isolierte Hilfsmittel nutzen, um den Verunglückten sicher zu bergen.</li>
+<li>Kurzschließen oder Durchtrennen der Leitungen nur erwägen.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>Erste Hilfe leisten:</strong></p>
+<ul>
+<li>Überprüfen von Atmung und Bewusstsein.</li>
+<li>Bei Bedarf mit Wiederbelebungsmaßnahmen beginnen.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>Notdienste rufen:</strong></p>
+<ul>
+<li>Unverzüglich einen Arzt oder Rettungsdienst alarmieren.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>Unfall melden:</strong></p>
+<ul>
+<li>Meldepflicht beachten und den Unfall bei den Behörden melden.</li>
+</ul>
+</blockquote>
+<h4 id="zus%C3%A4tzliche-sicherheitshinweise">Zusätzliche Sicherheitshinweise:</h4>
+<blockquote>
+<ul>
+<li>Bei Spannungen über 1000 V sollte jede Annäherung vermieden und nur durch Fachpersonal erfolgen.</li>
+<li>Der Retter sollte stets darauf achten, <strong>sich selbst und andere nicht zu gefährden</strong>.</li>
+</ul>
+</blockquote>
+<h3 id="124-kenntnisse-%C3%BCber-gefahren-bei-einem-brand-und-richtiges-verhalten-beim-brandfall-reihenfolge">1.2.4 Kenntnisse über Gefahren bei einem Brand und richtiges Verhalten beim Brandfall (Reihenfolge)</h3>
+<blockquote>
+<p>Im Brandfall sollte folgendermaßen gehandelt werden:</p>
+<ol>
+<li>Alarmierung der Feuerwehr.</li>
+<li>Warnung der anderen Personen im Gebäude.</li>
+<li>Verlassen des Gebäudes über die gekennzeichneten Notausgänge.</li>
+<li>Nach Möglichkeit Bekämpfung des Feuers mit geeigneten Feuerlöschmitteln, ohne sich selbst zu gefährden.</li>
+</ol>
+</blockquote>
+<h3 id="125-kenntnisse-%C3%BCber-co2--und-pulver-feuerl%C3%B6scher">1.2.5 Kenntnisse über CO2- und Pulver-Feuerlöscher</h3>
+<blockquote>
+<ul>
+<li><strong>CO2-Feuerlöscher</strong> eignen sich besonders für Brände von flüssigen oder gasförmigen Stoffen und sind effektiv bei elektrischen Bränden, da sie nicht leitend sind.</li>
+<li><strong>Pulver-Feuerlöscher</strong> sind universell einsetzbar und wirksam gegen Brandklassen A, B und C, allerdings können sie erhebliche Nebenschäden verursachen, besonders bei elektronischen Geräten.</li>
+</ul>
+</blockquote>
+<h3 id="126-richtige-verwendung-von-feuerl%C3%B6schern-bei-elektrischen-anlagen">1.2.6 Richtige Verwendung von Feuerlöschern bei elektrischen Anlagen</h3>
+<blockquote>
+<p>Bei elektrischen Anlagen sollten vorzugsweise CO2-Feuerlöscher verwendet werden, da sie den Brand löschen können, ohne weitere Schäden an der Elektronik zu verursachen. Wichtig ist, den Feuerlöscher auf die Basis des Feuers zu richten und ihn in sicherem Abstand zu verwenden.</p>
+</blockquote>
+<h3 id="127-richtiger-umgang-und-korrekte-lagerung-von-akkus-oder-batterien">1.2.7 Richtiger Umgang und korrekte Lagerung von Akkus oder Batterien</h3>
+<blockquote>
+<ul>
+<li>Lagerung in trockenen, kühlen Räumen.</li>
+<li>Vermeidung von Kurzschlüssen, z.B. durch Abdecken der Kontakte.</li>
+<li>Regelmäßige Kontrolle auf Beschädigungen oder Auslaufen.</li>
+</ul>
+</blockquote>
+<h3 id="128-kenntnisse-%C3%BCber-umweltgerechte-entsorgung-von-elektronikschrott-toner-akkus-oder-batterien">1.2.8 Kenntnisse über umweltgerechte Entsorgung von Elektronikschrott, Toner, Akkus oder Batterien</h3>
+<blockquote>
+<ul>
+<li>Trennung von normalen Abfällen.</li>
+<li>Rückgabe an spezialisierte Sammelstellen oder Händler.</li>
+<li>Beachtung der spezifischen Entsorgungsvorschriften für gefährliche Stoffe.</li>
+</ul>
+</blockquote>
+<h3 id="129-kenntnisse-%C3%BCber-arbeitsrechtliche-gesetze-kjbg-aschg-glbg">1.2.9 Kenntnisse über arbeitsrechtliche Gesetze (KJBG, ASchG, GlBG)</h3>
+<blockquote>
+<ol>
+<li><strong>Kinder- und Jugendlichen-Beschäftigungsgesetz (KJBG):</strong>
+Das KJBG regelt die Arbeitsbedingungen für Kinder und Jugendliche in Österreich. Es zielt darauf ab, die Sicherheit, Gesundheit und Entwicklung junger Menschen am Arbeitsplatz zu schützen. Das Gesetz definiert, wer als Kind oder Jugendlicher gilt, legt fest, welche Arten von Arbeit erlaubt oder verboten sind, und regelt Arbeitszeiten, Ruhezeiten sowie die erforderlichen Pausen. Zum Beispiel dürfen Kinder unter 15 Jahren grundsätzlich nicht beschäftigt werden, außer in leichten und für Kinder geeigneten Tätigkeiten.</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li><strong>ArbeitnehmerInnenschutzgesetz (ASchG):</strong>
+Das ASchG umfasst Vorschriften zur Sicherstellung der Sicherheit und des Gesundheitsschutzes der Arbeitnehmerinnen und Arbeitnehmer am Arbeitsplatz. Das Gesetz enthält Regelungen zu den Pflichten des Arbeitgebers, wie zum Beispiel die Durchführung von Gefährdungsbeurteilungen, die Bereitstellung von Sicherheitsausrüstungen und die Sicherstellung einer angemessenen Ausbildung der Mitarbeiter in Bezug auf Sicherheitspraktiken. Darüber hinaus regelt es auch die Rechte und Pflichten der ArbeitnehmerInnen, einschließlich der Meldung von Sicherheitsmängeln.</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li><strong>Gleichbehandlungsgesetz (GlBG):</strong>
+Das GlBG dient dem Schutz vor Diskriminierung in der Arbeitswelt aufgrund von Geschlecht, Alter, sexueller Orientierung, Religion, Weltanschauung oder ethnischer Zugehörigkeit. Es regelt die Gleichbehandlung in arbeitsrechtlichen Angelegenheiten, einschließlich Einstellung, Arbeitsbedingungen, Aufstiegschancen, Entgeltgleichheit und den Schutz vor Belästigung am Arbeitsplatz. Das Gesetz sieht auch spezifische Maßnahmen und rechtliche Schritte vor, die Betroffene im Falle einer Diskriminierung ergreifen können.</li>
+</ol>
+</blockquote>
+<h2 id="13-technische-dokumentation">1.3 Technische Dokumentation</h2>
+<h3 id="131-aufgabe-und-strukturierung-von-testl%C3%A4ufen">1.3.1 Aufgabe und Strukturierung von Testläufen</h3>
+<blockquote>
+<p>Testläufe dienen dazu, die Funktionalität und Stabilität von Software oder Systemen unter kontrollierten Bedingungen zu überprüfen. Die Strukturierung erfolgt oft in Phasen wie Planung, Durchführung und Analyse:</p>
+<ul>
+<li><strong>Planung</strong>: Festlegen von Testzielen, Testfällen und Erfolgskriterien.</li>
+<li><strong>Durchführung</strong>: Ausführen der Tests, oft unter Verwendung spezifischer Testsoftware.</li>
+<li><strong>Analyse</strong>: Auswerten der Ergebnisse und Dokumentieren von Abweichungen oder Fehlern.</li>
+</ul>
+</blockquote>
+<h3 id="132-inhalt-einer-technischen-dokumentationeines-technischen-protokolls">1.3.2 Inhalt einer technischen Dokumentation/eines technischen Protokolls</h3>
+<blockquote>
+<p>Eine technische Dokumentation enthält in der Regel:</p>
+<ul>
+<li><strong>Zielsetzung</strong> des Projekts oder der Arbeit.</li>
+<li><strong>Methodik</strong> oder Verfahrensanweisungen.</li>
+<li><strong>Ergebnisse</strong> und deren Interpretation.</li>
+<li><strong>Fehler- und Problemmeldungen</strong> sowie Lösungsansätze.</li>
+</ul>
+</blockquote>
+<h3 id="133-aufbereitung-einer-technischen-dokumentationeines-technischen-protokolls">1.3.3 Aufbereitung einer technischen Dokumentation/eines technischen Protokolls</h3>
+<blockquote>
+<p>Die Aufbereitung sollte klar, präzise und systematisch erfolgen. Verwendung von Abschnitten, Überschriften und Listen hilft, Informationen leicht zugänglich zu machen. Grafiken und Tabellen können zur Visualisierung von Daten beitragen.</p>
+</blockquote>
+<h3 id="134-anwendung-der-schrittaufzeichnungstep-recorder">1.3.4 Anwendung der Schrittaufzeichnung/Step Recorder</h3>
+<blockquote>
+<p>Der Step Recorder in Windows ist ein Tool zur Aufzeichnung von Schritten, die ein Benutzer auf seinem Computer ausführt. Es ist hilfreich für die Fehlerdiagnose oder die Erstellung von Trainingsmaterial.</p>
+</blockquote>
+<h3 id="135-beilagen-technischer-dokumentationen-testprotokoll-netzwerkplan">1.3.5 Beilagen technischer Dokumentationen (Testprotokoll, Netzwerkplan, …)</h3>
+<blockquote>
+<p>Beilagen wie Testprotokolle oder Netzwerkpläne ergänzen die Hauptdokumentation und bieten detaillierte Einblicke in spezifische Aspekte der Arbeit.</p>
+</blockquote>
+<h3 id="136-gestaltung-und-vorbereitung-von-pr%C3%A4sentationen">1.3.6 Gestaltung und Vorbereitung von Präsentationen</h3>
+<blockquote>
+<p>Für die Präsentation technischer Inhalte sollte auf klare Struktur, Verständlichkeit und visuelle Unterstützung durch Diagramme, Charts und Bilder geachtet werden. Tools wie Microsoft PowerPoint oder Google Slides sind hierfür geeignet.</p>
+</blockquote>
+<h2 id="14-datenschutzgrundverordnung-dsgvo">1.4 Datenschutzgrundverordnung (DSGVO)</h2>
+<h3 id="141-aktuelle-dsgvo">1.4.1 Aktuelle DSGVO</h3>
+<blockquote>
+<p>Die Datenschutzgrundverordnung ist ein Regelwerk der EU, das den Schutz personenbezogener Daten innerhalb der Europäischen Union regelt. Es zielt darauf ab, die Privatsphäre der Bürger zu schützen und die Datenverarbeitung durch Unternehmen und öffentliche Stellen zu regulieren.</p>
+</blockquote>
+<h3 id="142-datenminimierung">1.4.2 Datenminimierung</h3>
+<blockquote>
+<p>Der Grundsatz der Datenminimierung besagt, dass nur so viele personenbezogene Daten erhoben und verarbeitet werden dürfen, wie unbedingt notwendig für den festgelegten Zweck.</p>
+</blockquote>
+<h3 id="143-fachbegriffe-laut-dsgvo">1.4.3 Fachbegriffe laut DSGVO</h3>
+<blockquote>
+<ul>
+<li><strong>Betroffene Personen</strong>: Individuen, deren personenbezogene Daten verarbeitet werden.</li>
+<li><strong>Verantwortlicher</strong>: Die Person oder Stelle, die über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.</li>
+<li><strong>Auftragsverarbeiter</strong>: Eine Person oder Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.</li>
+</ul>
+</blockquote>
+<h3 id="144-rechte-von-betroffenen-personen">1.4.4 Rechte von betroffenen Personen</h3>
+<blockquote>
+<p>Dazu gehören das Recht auf Auskunft, Berichtigung, Löschung („Recht auf Vergessenwerden“), Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch gegen die Verarbeitung.</p>
+</blockquote>
+<h3 id="145-personenbezogene-und-sensible-daten">1.4.5 Personenbezogene und sensible Daten</h3>
+<blockquote>
+<p>Personenbezogene Daten sind Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Sensible Daten umfassen Daten über rassische oder ethnische Herkunft, politische Meinungen, religiöse Überzeugungen, genetische Daten, biometrische Daten, Gesundheitsdaten oder Daten zum Sexualleben.</p>
+</blockquote>
+<h3 id="146-kopplungsverbot">1.4.6 Kopplungsverbot</h3>
+<blockquote>
+<p>Das Kopplungsverbot besagt, dass die Erbringung einer Dienstleistung nicht davon abhängig gemacht werden darf, dass die betroffene Person der Verarbeitung mehr personenbezogener Daten zustimmt, als für die Erbringung der Dienstleistung notwendig ist.</p>
+</blockquote>
+<h3 id="147-datenschutzbeauftragter">1.4.7 Datenschutzbeauftragter</h3>
+<blockquote>
+<p>Ein Datenschutzbeauftragter überwacht die Einhaltung der DSGVO innerhalb einer Organisation. Er ist Ansprechpartner für Datenschutzfragen sowohl intern als auch für Aufsichtsbehörden und betroffene Personen.</p>
+</blockquote>
+<h3 id="148-pflichten-bei-datendiebstahl">1.4.8 Pflichten bei Datendiebstahl</h3>
+<blockquote>
+<p>Unternehmen sind verpflichtet, Datenschutzverletzungen innerhalb von 72 Stunden nach Bekanntwerden der zuständigen Aufsichtsbehörde zu melden. Betroffene Personen müssen ebenfalls informiert werden, wenn ein hohes Risiko für deren Rechte und Freiheiten besteht.</p>
+</blockquote>
+<h3 id="149-weitere-rechtliche-grundlagen">1.4.9 Weitere rechtliche Grundlagen</h3>
+<blockquote>
+<ul>
+<li><strong>Urheberrecht:</strong> Schützt die Rechte von Kreativen und Urhebern an ihren Werken. Der Gültigkeitsbereich umfasst Werke wie Literatur, Musik, Kunst und Software.</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>Gewährleistung und Garantie:</strong> Gewährleistung ist gesetzlich vorgeschrieben und deckt Mängel ab, die bereits zum Zeitpunkt des Kaufs bestanden. Garantie ist eine freiwillige Zusicherung des Herstellers und kann über die Gewährleistung hinausgehen.</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>E-Commerce-Gesetz (ECG):</strong> Regelt die rechtlichen Rahmenbedingungen für elektronische Geschäfte, insbesondere Online-Handel.</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>Telekommunikationsgesetz (TKG):</strong> Regelt die Telekommunikationsdienste und -netze, Datenschutz und den Wettbewerb im Telekommunikationssektor.</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>Pflichtangaben eines Homepage-Betreibers (Impressum):</strong> Informationen wie Name des Unternehmens, Kontaktdaten, Registrierungsnummer, Umsatzsteuer-ID müssen klar erkennbar sein.</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>Pflichtangaben beim E-Mail-Verkehr von Unternehmen:</strong> Ähnlich wie im Impressum müssen E-Mails von Unternehmen vollständige Kontaktdaten und Firmeninformationen enthalten.</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>Gesetzliche Einhaltung von Bildschirmpausen:</strong> Bestimmungen zu Pausen bei Bildschirmarbeit sind wichtig für die Gesundheit der Arbeitnehmer und in verschiedenen nationalen Arbeitsgesetzen festgelegt.</li>
+</ul>
+</blockquote>
+<h2 id="15-fachbegriffe-und-grundlagen-in-der-informationstechnik">1.5 Fachbegriffe und Grundlagen in der Informationstechnik</h2>
+<h3 id="151-fachbegriff-big-data">1.5.1 Fachbegriff Big Data</h3>
+<blockquote>
+<p><strong>Definition</strong>: Big Data bezieht sich auf extrem große Datenmengen, die aus verschiedenen Quellen stammen und mit herkömmlichen Datenverarbeitungsmethoden nicht analysiert werden können.</p>
+</blockquote>
+<blockquote>
+<p><strong>Anwendung</strong>: Big Data wird genutzt, um Muster und Trends zu erkennen, insbesondere in Bereichen wie Marketing, Gesundheitswesen, Finanzen und beim Internet der Dinge (IoT).</p>
+</blockquote>
+<h3 id="152-fachbegriff-web-20">1.5.2 Fachbegriff Web 2.0</h3>
+<blockquote>
+<p><strong>Definition</strong>: Web 2.0 beschreibt die zweite Generation des Internets, die durch interaktive und kollaborative Elemente gekennzeichnet ist, im Gegensatz zu den statischen Seiten des früheren Web 1.0.</p>
+</blockquote>
+<blockquote>
+<p><strong>Beispiele</strong>: Soziale Netzwerke, Blogs, Wikis und interaktive Kommentarsektionen.</p>
+</blockquote>
+<h3 id="153-fachbegriff-industrie-40">1.5.3 Fachbegriff Industrie 4.0</h3>
+<blockquote>
+<p><strong>Definition</strong>: Industrie 4.0 bezieht sich auf die vierte industrielle Revolution, die durch Automatisierung, Datenvernetzung und künstliche Intelligenz in der Fertigungstechnik gekennzeichnet ist.</p>
+</blockquote>
+<blockquote>
+<p><strong>Technologien</strong>: Robotik, künstliche Intelligenz, IoT, und cyber-physische Systeme.</p>
+</blockquote>
+<h3 id="154-fachbegriff-iot-internet-of-things">1.5.4 Fachbegriff IoT (Internet of Things)</h3>
+<blockquote>
+<p><strong>Definition</strong>: IoT steht für das &quot;Internet der Dinge&quot;, also die Vernetzung von physischen Objekten mit dem Internet, die dann Daten sammeln und austauschen können.</p>
+</blockquote>
+<blockquote>
+<p><strong>Anwendung</strong>: Smart Homes, intelligente Verkehrssteuerung, Gesundheitsüberwachung.</p>
+</blockquote>
+<h3 id="155-sprachassistenten-vor--und-nachteile">1.5.5 Sprachassistenten: Vor- und Nachteile</h3>
+<blockquote>
+<p><strong>Vorteile</strong>:</p>
+<ul>
+<li>Erhöhte Produktivität durch Sprachbefehle.</li>
+<li>Einfacher Zugriff auf Informationen und Gerätesteuerung.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>Nachteile</strong>:</p>
+<ul>
+<li>Datenschutzbedenken bei gesammelten Sprachdaten.</li>
+<li>Risiko von Fehlinterpretationen und Fehlfunktionen.</li>
+</ul>
+</blockquote>
+<h3 id="156-e-government-digitale-signatur-und-handy-signatur">1.5.6 e-Government, digitale Signatur und Handy-Signatur</h3>
+<blockquote>
+<p><strong>e-Government</strong>: Nutzung von digitalen Technologien zur Erbringung öffentlicher Dienstleistungen.</p>
+</blockquote>
+<blockquote>
+<p><strong>Digitale Signatur</strong>: Verschlüsselte elektronische Unterschrift, die die Identität des Unterzeichners bestätigt und die Integrität der signierten Daten sichert.</p>
+</blockquote>
+<blockquote>
+<p><strong>Handy-Signatur</strong>: Eine Form der digitalen Signatur, die über ein Mobilgerät generiert wird und rechtlich bindend ist.</p>
+</blockquote>
+<h3 id="157-schutzm%C3%B6glichkeiten-von-cookie-tracking-und-cookieless-tracking">1.5.7 Schutzmöglichkeiten von Cookie-Tracking und Cookieless-Tracking</h3>
+<blockquote>
+<p><strong>Cookie-Tracking</strong>: Nutzer können Cookies in ihren Browser-Einstellungen verwalten und blockieren.</p>
+</blockquote>
+<blockquote>
+<p><strong>Cookieless-Tracking</strong>: Schwieriger zu kontrollieren, da es auf Techniken wie Fingerprinting basiert. Nutzer können Datenschutztools wie VPNs und Anti-Tracking-Software verwenden.</p>
+</blockquote>
+<h3 id="158-gefahr-von-identit%C3%A4tsdiebstahl">1.5.8 Gefahr von Identitätsdiebstahl</h3>
+<blockquote>
+<p><strong>Risiken</strong>: Missbrauch persönlicher Daten zur Eröffnung von Konten, Durchführung von Transaktionen oder zur Erlangung von Leistungen.</p>
+</blockquote>
+<blockquote>
+<p><strong>Prävention</strong>: Sichere Passwörter, regelmäßige Überprüfung von Kontoberichten, und Vorsicht bei der Preisgabe persönlicher Informationen.</p>
+</blockquote>
+<h3 id="159-fachbegriff-netzneutralit%C3%A4t">1.5.9 Fachbegriff Netzneutralität</h3>
+<blockquote>
+<p><strong>Definition</strong>: Netzneutralität ist das Prinzip, dass Internetdienstanbieter alle Daten im Internet gleich behandeln und keinen Verkehr diskriminieren oder bevorzugen dürfen.</p>
+</blockquote>
+<h3 id="1510-nutzung-von-biometrischen-daten-vor--und-nachteile">1.5.10 Nutzung von biometrischen Daten: Vor- und Nachteile</h3>
+<blockquote>
+<p>Diese Daten umfassen persönliche Merkmale wie Fingerabdrücke, Gesichtserkennung, Iriserkennung und sogar Stimmerkennung, die zur Identifikation und Authentifizierung in verschiedenen Sicherheitssystemen verwendet werden.</p>
+</blockquote>
+<h4 id="vorteile-der-nutzung-von-biometrischen-daten">Vorteile der Nutzung von biometrischen Daten</h4>
+<blockquote>
+<p><strong>Hohe Sicherheit:</strong> Biometrische Merkmale sind in der Regel einzigartig für jede Person. Diese Einzigartigkeit bietet eine hohe Sicherheitsstufe, da die Wahrscheinlichkeit, dass zwei Personen exakt die gleichen biometrischen Daten haben, extrem gering ist. Im Vergleich zu traditionellen Sicherheitsmaßnahmen wie Passwörtern, die gehackt oder vergessen werden können, bieten biometrische Systeme eine robustere Lösung.</p>
+<p><strong>Schneller und bequemer Zugriff:</strong>
+Biometrische Systeme ermöglichen einen schnellen und bequemen Zugang zu Geräten und Diensten. Anstatt sich lange Passwörter zu merken oder Sicherheitsfragen zu beantworten, können Benutzer durch einen einfachen Scan ihres Fingerabdrucks oder durch Gesichtserkennung auf ihre Geräte und persönlichen Konten zugreifen. Diese Methoden sind nicht nur schneller, sondern auch benutzerfreundlicher, was sie besonders attraktiv für den alltäglichen Gebrauch macht.</p>
+</blockquote>
+<h4 id="nachteile-der-nutzung-von-biometrischen-daten">Nachteile der Nutzung von biometrischen Daten</h4>
+<blockquote>
+<p><strong>Datenschutzrisiken:</strong>
+Obwohl biometrische Daten eine hohe Sicherheit bieten, bergen sie auch Risiken im Hinblick auf den Datenschutz. Wenn biometrische Daten kompromittiert oder gestohlen werden, können die Konsequenzen gravierend sein. Im Gegensatz zu einem Passwort, das zurückgesetzt werden kann, sind biometrische Daten dauerhaft mit einer Person verbunden und können nicht einfach geändert werden. Dies stellt ein signifikantes Risiko dar, falls die Daten in die falschen Hände gelangen.</p>
+<p><strong>Fehlerraten bei der Erkennung:</strong>
+Biometrische Systeme sind nicht fehlerfrei und können unter bestimmten Umständen zu Fehlern bei der Erkennung führen. Falsche Ablehnungen (False Rejection Rate, FRR) treten auf, wenn ein authentischer Benutzer fälschlicherweise nicht erkannt wird, während falsche Annahmen (False Acceptance Rate, FAR) auftreten, wenn das System eine nicht autorisierte Person irrtümlich akzeptiert. Diese Fehlerraten können die Zuverlässigkeit biometrischer Systeme beeinträchtigen und stellen eine Herausforderung für ihre breite Akzeptanz dar.</p>
+</blockquote>
+<h3 id="1511-unternehmensrichtlinien-f%C3%BCr-nutzung-von-sozialen-netzwerken">1.5.11 Unternehmensrichtlinien für Nutzung von sozialen Netzwerken</h3>
+<h4 id="verhalten-und-kommunikation">Verhalten und Kommunikation</h4>
+<blockquote>
+<ul>
+<li><strong>Inhaltsrichtlinien</strong>: Klare Definitionen erlaubter Inhalte, um Datenschutz und Professionalität zu wahren.</li>
+<li><strong>Verhaltenskodex</strong>: Vorgaben für professionelle und respektvolle Kommunikation.</li>
+<li><strong>Schulung</strong>: Mitarbeiter werden regelmäßig in sicheren und effektiven Umgang mit sozialen Medien trainiert.</li>
+</ul>
+</blockquote>
+<h4 id="vertraulichkeit-und-professionelles-image">Vertraulichkeit und professionelles Image</h4>
+<blockquote>
+<ul>
+<li><strong>Datenschutz</strong>: Richtlinien betonen den Schutz personenbezogener Daten.</li>
+<li><strong>Imagepflege</strong>: Anweisungen zum professionellen Umgang mit öffentlichem Feedback und zur Imagepflege.</li>
+<li><strong>Verantwortlichkeiten</strong>: Festlegung, wer für Unternehmensposts verantwortlich ist und Prüfverfahren vor der Veröffentlichung.</li>
+</ul>
+</blockquote>
+<h4 id="interessenkonflikte-und-rechtliche-compliance">Interessenkonflikte und rechtliche Compliance</h4>
+<blockquote>
+<ul>
+<li><strong>Offenlegung</strong>: Mitarbeiter müssen potenzielle Interessenkonflikte offenlegen.</li>
+<li><strong>Rechtliche Einhaltung</strong>: Posts müssen alle gesetzlichen Anforderungen erfüllen, inklusive Werbevorschriften und Urheberrechte.</li>
+<li><strong>Überwachung</strong>: Kontinuierliche Überwachung der Einhaltung der Richtlinien und Maßnahmen bei Nichteinhaltung.</li>
+</ul>
+</blockquote>
+<h2 id="16-datenaustausch">1.6 Datenaustausch</h2>
+<h3 id="161-m%C3%B6glichkeiten-des-datenaustausches">1.6.1 Möglichkeiten des Datenaustausches</h3>
+<h4 id="kabelgebundene-systeme">Kabelgebundene Systeme</h4>
+<blockquote>
+<ul>
+<li><strong>Kupferkabel</strong>: Diese umfassen Twisted-Pair-Kabel, die für die meisten Netzwerkanwendungen verwendet werden, und Koaxialkabel, die häufig für Breitbandnetzwerke verwendet werden.</li>
+<li><strong>Lichtwellenleiter (Glasfaser)</strong>: Diese bieten höhere Übertragungsgeschwindigkeiten und -reichweiten mit geringerer Störanfälligkeit. Sie sind ideal für Netzwerke, die hohe Bandbreiten erfordern.</li>
+</ul>
+</blockquote>
+<h4 id="kabellose-systeme">Kabellose Systeme</h4>
+<blockquote>
+<ul>
+<li><strong>WLAN (Wireless Local Area Network)</strong>: Ermöglicht die kabellose Vernetzung von Geräten innerhalb eines begrenzten Bereichs.</li>
+<li><strong>Mobilfunktechnologien</strong> (z.B. GSM, UMTS, LTE): Ermöglichen die Datenübertragung über größere Entfernungen und sind weit verbreitet für den mobilen Internetzugang.</li>
+<li><strong>Infrarot- und Bluetooth-Technologien</strong>: Meist für kurze Distanzen und spezifische Anwendungen wie die Verbindung von Peripheriegeräten verwendet.</li>
+</ul>
+</blockquote>
+
+</body>
+</html>
