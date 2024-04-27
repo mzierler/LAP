@@ -1,0 +1,454 @@
+3.4Datenaustausch
+Möglichkeiten des Datenaustausches
+Datenübertragung, Bandbreite
+Sichere Verbindungen, Verschlüsselung
+Fachbegriff VPN
+Fachbegriff Intranet
+Kenntnisse über Schnittstellen, Übertragungstechnologien
+Vor- und Nachteile Hosting-/Cloud-Lösungen
+Voraussetzungen zur Nutzung von Clouddiensten
+
+5 Benutzerendgeräte und Peripheriegeräte
+
+5.1Hardwaresysteme
+Kenntnisse über den Zusammenbau eines PC-Systems aus einzelnen Bauteilen
+Fachbegriff CPU
+Kenntnisse über Begriffe "flüchtiger Speicher" und "nichtflüchtiger Speicher"
+Kenntnisse über den Speicherbaustein ROM
+Fachbegriff Cache
+Fachbegriff RAM, Flash-RAM und Kenntnisse über aktuelle RAM-Technologien
+Fachbegriffe HDD, SSD, SHDD
+Fachbegriffe BIOS, UEFI
+Kenntnisse über die Bedeutung von "Plug & Play"
+Aufbau und die Funktionsweise einer Grafikkarte
+Kenntnisse über die aktuellen Grafikstandards
+Fachbegriffe HDMI, DVI, DisplayPort
+Aufbau und die Funktionsweise eines Grafikspeichers (Video-RAM)
+Kenntnisse über Standards von Speicherkarten (Flash)
+Kenntnisse über mobile Datenträger (magnetisch, optisch, elektronisch), deren Bauformen und 
+Kapazitäten
+Fachbegriff SATA-Schnittstelle
+Funktion und Aufbau der seriellen Schnittstelle
+Funktionsweise einer Tastatur, optischen Maus
+Vor- und Nachteile von Funk-Tastaturen, Funk-Mäusen
+Funktionsprinzip eines Laser-Druckers
+Funktionsprinzip eines Tintenstrahldruckers
+Funktionsprinzip eines Scanners, Kenntnisse über verschiedene Arten von Scannern
+Funktion und Spezifikation der USB-Schnittstellen (2.0, 3.0, 3.1, 3.2, …)
+
+5.2Betriebssysteme und Software
+Fachbegriff Betriebssystem
+Kenntnis der am Markt führend verbreiteten Betriebssysteme
+Kenntnisse über Desktop-Betriebssysteme
+Fachbegriff Firmware
+Fachbegriffe Systemprogramm, Anwendungsprogramm
+Fachbegriff Multitasking-Betriebssystem
+Fachbegriffe Single-User-System, Multi-User-System
+Kenntnis der Windows Command-Line (inkl. einfacher Befehle)
+Kenntnis über die Powershell (inkl. einfacher Befehle)
+Kenntnisse über grafische Oberflächen unter Linux
+Fachbegriff Dateisystem
+Fachbegriffe FAT, NTFS
+
+5.3Betreuung von mobiler Hardware
+Technische Merkmale von Smartphones
+Technische Merkmale von Tablets
+Kenntnisse über die Akku-Technologien (NiMh/LiPo/LiIon)
+Kenntnisse über kapazitive Touchscreens
+Kenntnisse über verbaute Sensorik und dessen Nutzungsmöglichkeiten
+Fachbegriff Multitouch
+Kenntnisse über Bluetooth Standards
+Kenntnisse über Betriebssysteme mobiler Geräte (Android, IOS, …)
+Fachbegriff QR-Code
+Vor- und Nachteile von geschlossenen Systemen mit Betriebssystem und App-Store
+Fachbegriff Roaming
+Kenntnisse über Vor- und Nachteile von Daten-Roaming
+Kenntnisse über Verschlüsselungs- und Schutztechnologien von mobilen Endgeräten
+Kenntnisse über Virenschutz und Backupmöglichkeit bei mobilen Endgeräten
+
+5.4Anwenderkenntnisse
+Anwendung von Tabellenkalkulations-Software (Excel, Calc, ...) inkl. Formeln/Funktionen
+Anwendung von Textverarbeitungs-Software (Word, Writer, ...) inkl. Formatiermöglichkeiten
+Anwendung von Bildbearbeitungs-Software
+Kenntnis der Unterschiede von offenen, proprietären und plattformunabhängigen 
+Dateiformaten
+
+5.5Programmiersprachen
+Kenntnisse über gängige Programmiersprachen und deren Anwendungsmöglichkeiten
+Unterschied prozedurale und objektorientierte Programmierung
+Fachbegriff Implementierung
+Fachbegriff Compiler
+Fachbegriff Interpreter
+
+5.6Fehleranalyse/Verwenden von Systemtools
+Bedienung und Analyse des Event-Viewer (Windows)
+Auffinden und Analysieren von Messages-Logs (Linux)
+Anwendung des Kommandos ping (Linux/Windows) und dessen Parameter
+Anwendung der Kommandos ipconfig (Windows)/ifconfig (Linux) und deren Parameter
+Anwendung der Kommandos traceroute (Windows)/tracert (Linux) und deren Parameter
+Analyse und Behebung von Hardware-Fehlern
+Vorgangsweise bei einem Druckerdefekt
+Behebung einer Netzwerkunterbrechung
+Fehlersuche bei fehlender Internet-Verbindung
+Vorgangsweise zur Feststellung von Fehlern an einzelnen Bauteilen
+
+6 Netzwerke
+
+6.1Netzwerktechnik
+Fachbegriff Netzwerk
+Kenntnis der Netzwerktopologien wie Stern, Ring, Bus, Baum, Masche
+Kenntnis der Vor- und Nachteile der jeweils eingesetzten Netzwerktopologien
+Funktionsprinzip eines Routers, Switches
+Kenntnis des Fachbegriffes Subnetzmaske und deren technischen Zusammenhänge
+Kenntnisse über das OSI-Modell
+Einordnung von Protokollen in das OSI-Modell
+Einordnung von Netzwerk- und Hardwaregeräten in das OSI-Modell
+Kenntnisse über die Protokollfamilie TCP/IP
+Fachbegriff IPv4-Adresse und deren Aufbau
+Kenntnisse über IPv6-Adressierung
+Unterscheidung von public/private IP-Adressen
+Kenntnis der privaten IP-Adress-Bereiche
+Fachbegriff MAC-Adresse und deren Aufbau
+Fachbegriff Ethernet
+Fachbegriff xDSL
+Unterscheidung der Fachbegriffe Upload, Download
+Fachbegriff WLAN
+Fachbegriff Access-Point
+
+6.2Netzwerkdienste
+Aufbau eines Active-Directorys
+Funktionsprinzip eines Domain-Controllers
+Kenntnisse über den Netzwerkdienst DHCP
+Funktionsprinzip eines Proxy-Servers
+Funktionsprinzip eines Webservers
+Kenntnis des DNS-Dienstes und dessen hierarchischen Aufbaues
+Fachbegriffe Domain, Sub-Domain und Top-Level-Domain
+Kenntnis der Web-Protokolle HTTP und HTTPS
+Funktionsprinzip eines Mail-Servers
+Kenntnis der Mailprotokolle POP3/POP3S, IMAP/IMAPS und SMTP/SMTPS
+Kenntnisse über FTP/FTPS
+Kenntnisse über SSL
+Fachbegriff Cloud-Computing und Beispiele für marktbekannte Cloud-Dienste
+Kenntnisse über Private/Public/Hybrid Cloud
+Fachbegriffe IaaS, PaaS, SaaS
+Kriterien und Voraussetzungen für den Einsatz von Cloud-Diensten
+
+6.3IT-Security und Betriebssicherheit
+Kenntnisse über Gefahren von Viren, Würmern, Trojanern, Spyware, Hackern, Phishing
+Fachbegriff Zero-Day-Exploit
+Kenntnisse über Einschränkungsmöglichkeiten bei Benutzerkonten
+Fachbegriff Multifaktor-Authentifizierung
+Kenntnis der Sicherheits-Unterschiede zw. Hardware- und Software-Firewall
+Funktion einer Hardware-Firewall
+Kenntnisse über notwendige Einstellungen bei Virenscanner
+Kenntnisse über Möglichkeiten Client-PCs vor Missbrauch zu schützen
+Kenntnisse über sichere Planung von Backups
+Kenntnisse über verschiedene Backup-Prinzipien
+Kenntnisse über Backup-Medien und deren richtiger Lagerung
+Fachbegriff DMZ
+Fachbegriff Stateful Packet Inspection
+Funktionsweise eines Port-Scanners
+Kenntnisse über Sicherheitstechnologie TLS
+Fachbegriff CA in Zusammenhang mit Zertifikaten
+Fachbegriffe Private Key und Public Key
+Sicherstellen von Datenvertraulichkeit bei gemeinsamen Netzlaufwerken
+Erarbeiten von Berechtigungskonzepten im Active Directory
+Festlegen von Gruppenrichtlinien (GPOs)
+Erzwingen von Passwortrichtlinien
+Kenntnisse über User Account Control (UAC)
+Kenntnisse über Möglichkeiten Client-PCs vor Missbrauch zu schützen
+Kenntnisse über Methoden der sicheren Löschung von Daten
+Inhalte von Unternehmensrichtlinien für Datenträgerentsorgung
+
+7 Qualitäts- und Projektmanagement
+
+7.1Projektplanung
+Fachbegriff Projektmanagement
+Definition von Projekten
+Fachbegriff Pflichtenheft und notwendiger Inhalt
+Fachbegriff Lastenheft und notwendiger Inhalt
+Kenntnisse über Spannungsfelder in einem Projekt
+Kenntnisse über den Fachbegriff Primäres Projektziel
+Kenntnisse über Vor- und Nachteile einer Projektorganisation
+Ziel einer Projektdokumentation
+Fachbegriff Struktogramm
+Fachbegriff Ablaufdiagramm (Flowchart)
+Kenntnisse über wesentliche Schritte einer Projektplanung
+Kenntnisse über die Eigenschaften eines Projektleiters, Aufgaben eines Projektleiters
+Kenntnisse über Dokumentationen eines Projektes
+Fachbegriff Projektauftrag
+Fachbegriff Projektstrukturplan
+Fachbegriff Arbeitspaket
+Fachbegriff Meilenstein
+Unterschiede internes/externes Projekt
+Kenntnisse über die Projektkostenplanung
+
+7.2Projektmethoden, Tools
+Kenntnisse über Softwareprozessmodelle
+Kenntnisse über den Aufbau des Wasserfallmodells
+Probleme, die beim Wasserfallmodell auftreten können
+Kenntnisse über den Aufbau des V-Modells
+Kenntnisse über Vor- und Nachteile des V-Modells
+Kenntnisse über Agiles Projektmanagement
+Fachbegriff Scrummaster
+Fachbegriff Productowner
+Fachbegriff Backlog
+Fachbegriff Sprint
+Fachbegriff Stakeholder
+Fachbegriff Daily Scrum/Daily Standup
+Fachbegriff User Story/Story Board
+Fachbegriff Softwareentwurf
+Stadien der Softwareentwicklung
+Fachbegriff Prototyp
+Fachbegriff Soll-Ist-Analyse
+Fachbegriff Versionsverwaltung
+
+8 Qualitätssicherung
+Kenntnisse über den Zweck von Code-Reviews
+Fachbegriff Schreibtischtest
+Kenntnisse über Black-Box-Test, White-Box-Test, wesentliche Unterschiede
+Kenntnisse über wichtige Qualitätsmerkmale der Softwarefunktionalität
+Kenntnisse über Changemanagement
+Fachbegriff Versionierung und deren Nutzen
+Kenntnisse über Problemmanagement
+
+1 Benutzerendgeräte und Peripheriegeräte (Vertiefung)
+
+1.1Hardwaresysteme
+Fachbegriff Multicore-Prozessor
+Unterschiede Desktop-/Server-Prozessoren
+Aufbau und Funktionsweise eines Mainboards
+Fachbegriff Chipset
+Fachbegriffe Jumper, DIP-Schalter
+Kenntnisse über den Fachbegriff Formfaktor in Zusammenhang mit Mainboards
+Kenntnisse über ATX/Micro-ATX-Formfaktor in Zusammenhang mit Mainboards
+Funktionsweise von auf Mainboards befindlichen Bussystemen
+Kenntnisse über die wesentlichen UEFI-Einstellungen
+Funktionsprinzip eines Plotters
+Funktionsprinzip der Bubblejet-Technik/Piezo-Technik (Tintenstrahldrucker)
+Funktionsprinzip eines 3D-Druckers
+Fachbegriffe Interpolation, TWAIN, OCR im Zusammenhang mit Scannern
+Kenntnisse über Funktionsweise und Leistungsdaten eines Netzteiles
+Aufbau und Funktionsweise einer HDD (Umdrehungszahl, Zugriffszeit, Schnittstellen, …)
+Aufbau und Funktionsweise einer SSD
+Fachbegriffe TLC, MLC, SLC in Zusammenhang mit SSD
+Kenntnis der aktuellen SATA-Standards
+Fachbegriff Modem
+Fachbegriff BD-ROM
+Kenntnisse über Schreibformate BD-R, BD-RE
+Kenntnisse über Regionalcodes in Zusammenhang mit DVD/BD
+Kenntnis der Technologie von LCD-Bildschirmen
+Fachbegriff Full-HD bzw. UHD
+Kenntnisse über die Schnittstellen HDMI, Display-Port und Thunderbolt
+Funktion und Aufbau der seriellen Schnittstelle
+Funktion der USB-Schnittstelle und aktuelle USB-Spezifikationen
+Funktion und Spezifikation der Firewire-Schnittstelle
+
+1.2Betriebssysteme und Software
+Kenntnisse über Server-Betriebssysteme
+Fachbegriff Firmware
+Kenntnis der durch das Betriebssystem gesteuerten Energiespar-Möglichkeiten
+Kenntnisse über die Linux-Shell Bash
+Fachbegriff Journaling-Dateisystem
+Fachbegriff CIFS
+Fachbegriff ext4
+Fachbegriff APFS
+
+1.3Betreuung von mobiler Hardware
+Kenntnisse über MDM
+Fachbegriff Convertible
+Kenntnis der Merkmale von Mobile-Prozessoren
+Fachbegriffe E-Ink, OLED
+Fachbegriff Edge, 3G bzw. UMTS, 4G bzw. LTE, 5G
+Fachbegriff HSDPA
+Fachbegriff NFC
+Fachbegriff GPS/GPS-Tracking
+Kenntnisse über Daten-Zugriffsschutzmöglichkeiten bei Diebstahl von mobilen Endgeräten
+
+1.4Server-, Storage- und Rechenzentren
+Kenntnis der Unterschiede von Rackmount-Server und Blade-Server
+Fachbegriff SAN
+Kenntnisse über NAS-Systeme und deren Einsatzbereiche
+Fachbegriff Snapshot
+Fachbegriff Daten-Redundanz
+Fachbegriff RAID-Level (0/1/5)
+Fachbegriffe Hot-Plugging und Hot-Spare
+Fachbegriff Teaming in Zusammenhang mit Netzwerk-Ports
+Unterscheidung von Offline- und Online-USV-Anlagen
+Kenntnisse über optimale Klimatisierung in Rechenzentren
+Kenntnisse über Zutrittsschutz/Zutrittskontrolle bei Rechenzentren
+Kenntnisse über Cluster-Technologien (High Availability, Heart-Beat)
+Kenntnisse über Hypervisor-Technologien (XEN, KVM, ESX, Hyper-V)
+Kenntnisse über Virtualisierung (Server-Virtualisierung/Desktop-Virtualisierung)
+
+2 Netzwerke (Vertiefung)
+
+2.1Netzwerktechnik
+Kenntnisse über den Aufbau einer Routingtabelle
+Kenntnisse über statisches Routing, dynamisches Routing
+Fachbegriff Uplink-Port
+Fachbegriff VLAN
+Aufbau eines Koaxialkabels, Twisted-Pair-Kabels
+Kenntnis der CAT6/6a/7-Spezifikationen
+Aufbau eines LWL-Kabels
+Unterscheidung der Fachbegriffe Monomode und Multimode
+Fachbegriff Patch-Panel
+Fachbegriff Netzwerkdose
+Fachbegriff RJ45-Stecker
+Fachbegriff PoE
+Fachbegriff Ethernet
+Aufbau eines Ethernet-Paketes
+Fachbegriffe 100BaseTx, 1000Base-T, 10GBASE-T
+Fachbegriffe Gbit-Ethernet, 10Gbit-Ethernet
+Fachbegriff Traffic-Shaping
+Fachbegriff Subnetmask
+Aufbau eines IP-Paketes
+Fachbegriffe Multicasting, Unicasting
+Fachbegriffe Präfix und Interface Identifier in Zusammenhang mit IPv6
+Fachbegriff Dual-Stack in Zusammenhang mit IPv4 und IPv6
+Fachbegriff Port
+Kenntnisse über NAT/PAT-Technologie
+Kenntnisse über Port-Forwarding
+Fachbegriff QoS
+Fachbegriff WOL
+Kenntnis über DSL-Technologien
+Fachbegriff CATV-Modem
+Fachbegriff FTTH
+Fachbegriff Hotspot
+Kenntnis der aktuellen WLAN-Standards und Verschlüsselungen
+Standortwahl bei WLAN-Aufbau in Gebäuden
+Fachbegriff Roaming in Zusammenhang mit Access-Points
+Fachbegriff MAC-Filtering
+Kenntnisse über VPN und Tunneling
+
+2.2Netzwerkdienste
+Funktionsprinzip eines LDAP-Servers
+Funktionsprinzip eines Print-Servers
+Kenntnisse über TFTP
+Kenntnisse über SSH/Telnet
+Kenntnisse über RDP
+Kenntnisse über NFS
+Kenntnisse über SMB
+Fachbegriff NTP
+Fachbegriff VoIP
+Kenntnisse über die energieeffiziente Planung von IT-Systemen (Green-IT)
+
+2.3Systemadministration
+Kenntnisse über Active-Directory
+Fachbegriffe Rollen und Features bei Windows Server
+Konfiguration der IP-Adresse und zugehöriger Netzwerkeinstellungen
+Einrichten eines Backup-Jobs
+Installation und Aktualisierung von Treibern
+Vorgangsweise bei Installation neuer Sicherheits-Patches
+Vorgangsweise bei Installation von Service-Packs
+Kenntnisse über die Registry
+Anlegen neuer Benutzerprofile
+Konfiguration eines neuen Mailkontos
+
+3 IT-Management
+Kenntnisse über Fachbegriff ITIL
+Fachbegriff CMDB
+Fachbegriff CI in Zusammenhang mit ITIL
+Fachbegriff Incident
+Fachbegriff Change
+Fachbegriff Problem
+Fachbegriff Assetmanagement
+Fachbegriff SLA
+Kenntnis der am IT-Arbeitsmarkt anerkannten Schulungs-Zertifizierungen
+Erstellen von Bedienungsanleitungen für Anwendungen
+Erstellen von Inbetriebnahme-Protokollen von IT-Systemen
+Kenntnisse über wesentliche Inhalte von Wartungsverträgen
+Erstellen von Netzwerkplänen, Kenntnis technischer Symbole
+
+1 Benutzerendgeräte und Peripheriegeräte (Vertiefung)
+Einrichten von Benutzerendgeräten
+Benutzerverwaltung, Multifaktor-Authentifizierung
+Implementieren von Benutzerschnittstellen für Applikationen
+Einrichtung von Sicherheitsmaßnahmen, Zugangskontrollen
+Erstellen von Berechtigungskonzepten
+Synchronisieren von Benutzerendgeräten
+Konfiguration von Benutzerendgeräten
+Auswählen und in Betrieb nehmen neuer Netzwerkkomponenten
+Überwachung und Sicherstellung der Leistungsfähigkeit im Netzwerk
+Integration von Cloud-Diensten im Netzwerk
+Aufbau und Einrichtung von Netzwerken
+Kenntnisse über Datenspeichersysteme
+Konfiguration von Serversystemen und deren Basisdienste
+Kenntnisse über die Schnittstellen HDMI, Display-Port und Thunderbolt
+Kenntnisse über die wesentlichen UEFI-Einstellungen
+
+2 Lösungsbau (IT-Solutions)
+Kenntnis über PLAN – BUILD – RUN (Begriffe)
+Kenntnis über die internen IT-Lösungen und dessen Rollout
+Kenntnis über Integration von neuen IT-Lösungen
+Vor- und Nachteile von selbstentwickelten IT-Lösungen
+Kenntnisse über Mitwirken bei der Planung und beim Aufbau neuer Umgebungen (Konzeption, 
+Architektur, Sizing, Integration in die Anwendungslandschaft, Installation und Konfiguration)
+Kenntnis über Planung und Durchführung von Rollouts neuer Betriebssysteme
+Kenntnis des betrieblichen Anwendungsmanagements sowie zugehöriger Methodiken
+Kenntnis über zentrale Software-Verteilung/Updatemanagement
+Planung und Etablierung von LifeCycle-Management für Hardware und Software
+Prüfung von Support-Matrizen und LifeCycles laut Herstellervorgaben
+Festlegung von Entscheidungsmerkmalen für System/Lösungs-Entscheidungen
+Aufbereitung von Präsentationen und Entscheidungsgrundlagen
+Entwicklung von betrieblichen Umsetzungskonzepten von neuen IT-Lösungen
+Bereitstellung von Fehleranalyse-Tools für die betriebliche IT-Landschaft (Monitoring, zentrale 
+Logging-Dienste)
+Bereitstellung von Update-Management-Systeme (zB WSUS, Katello, etc.)
+
+3 Applikationen
+
+3.1Datenbanken, Datenmodelle und Datenstrukturen
+Fachbegriff Datenbanksysteme (Traditionelle Datenbanken (RDB), Objektorientierte 
+Datenbanken, Multimedia-Datenbanken (GIS), Data-Warehouse und OLAP)
+Fachbegriffe zu Datenbankabfragen (z. B.: SQL, SQL/XML)
+Fachbegriff Datenbankmanagementsystem (DBMS)
+Fachbegriff Content Management System (CMS)
+Fachbegriff Integrität im Zusammenhang mit Datenbanken
+Fachbegriff Redundanz im Zusammenhang mit Datenbanken
+Vorgangsweise bei der Datenmodellierung (RDB)
+Kenntnisse über Abfragesprachen zum Zugriff auf eine Datenbank
+Kenntnisse über grundlegende Datenbankoperationen (SELECT, FROM, WHERE, …)
+Kenntnisse über die ersten drei Normalformen im Zusammenhang mit Datenbanken
+Fachbegriffe Primärschlüssel, Fremdschlüssel, Relationen
+Kenntnis über Vor- und Nachteile bei Verwendung eines Indexes
+Vor- und Nachteile von Freeware Datenbanken
+Kenntnisse über Sicherungsmethoden
+Fachbegriff Sperrtabelle und Sperrverhalten
+Fachbegriff BIS (Betriebliches Informationssystem)
+Kenntnisse/Fachbegriff ERP Systeme
+Kenntnisse/Fachbegriff BI/BW Systeme
+
+3.2Grundkenntnisse des Programmierens
+Fachbegriff Algorithmus
+Fachbegriff Pseudocode
+Kenntnisse über Sortieralgorithmen (Bubblesort, Quicksort)
+Kenntnisse über Suchalgorithmen (sequentielle Suche, binäre Suche)
+Ablauf der Programmentwicklung
+Fachbegriffe zum Aufbau einer Programmiersprache (Syntax, Semantik, Kommentare, 
+Schlüsselwörter, Anweisung)
+Fachbegriffe Interpreter und Compiler (Unterschiede, Vor- und Nachteile)
+Fachbegriff Debugger (Einsatz)
+Fachbegriff Rekursive Funktionen
+Kenntnisse über ASCII-Tabellen
+Kenntnisse über Variablenarten, Datentypen und Definitionen
+Unterschied Variable und Konstante
+Gültigkeitsbereiche (Lebensdauer) von Variablen
+Fachbegriff Schleifen, Beispiele für Schleifen (kopfgesteuert, fußgesteuert)
+Kenntnisse über Verzweigungen und Fallunterscheidungen
+Kenntnis der objektorientierten Programmierung (Klassen, Objekte, Vererbung, …)
+
+3.3Systementwicklung/Testkonzepte
+Erstellen von Benutzeranleitungen, Dokumentationen, Tests
+Fachbegriff Programmspezifikation
+Fachbegriff Datenmodell
+Kenntnisse über wichtige Datentypen und Datenstrukturen
+Kenntnisse über Funktionen (Definition, Schnittstelle, Parameter, Rückgabewert, Aufruf)
+Unterschiede zwischen Call-By-Value und Call-By-Reference
+Kenntnisse über Klassen (Datenelemente, Konstruktor, Destruktor, Methoden, …)
+Kenntnisse über das Prinzip der Vererbung
+Fachbegriff Standardbibliothek
+Kenntnisse über Testkonzepte, Auswertung eines Softwaretests
+Kriterien für den Test von Datenbankfeldern unterschiedlicher Typen (Mail, Datum, …)
+Unterschiede zwischen einem reproduzierbaren/nicht-reproduzierbaren Fehler
+Kenntnisse über Möglichkeiten zur Automatisierung von Tests
