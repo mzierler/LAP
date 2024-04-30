@@ -1028,13 +1028,53 @@ Biometrische Systeme sind nicht fehlerfrei und können unter bestimmten Umständ
 ## 1.8 Datenaustausch
 
 ### 1.8.1 Möglichkeiten des Datenaustausches
+
+>- Direkte Verbindungen wie Ethernet-Kabel, USB, oder FireWire, die Geräte physisch miteinander verbinden.
+>- Netzwerke, einschließlich lokaler Netzwerke (LAN) und Weitverkehrsnetzwerke (WAN).
+>- Internetbasierte Dienste wie E-Mail, Cloud-Speicherlösungen (z.B. Google Drive, Dropbox), und File Transfer Protocol (FTP).
+>- Wireless Technologien wie WiFi, Bluetooth und NFC (Near Field Communication), die kabellose Datenübertragung ermöglichen.
+
 ### 1.8.2 Datenübertragung, Bandbreite
+
+>- Datenübertragung bezieht sich auf den Prozess des Sendens und Empfangens von Daten zwischen zwei oder mehr Geräten über ein Kommunikationsmedium (z.B. Kabel, Luft).
+>- Bandbreite ist ein Maß für die Übertragungskapazität eines Netzwerks und wird in Bits pro Sekunde (bps) ausgedrückt. Höhere Bandbreite ermöglicht eine schnellere Datenübertragung.
+
 ### 1.8.3 Sichere Verbindungen, Verschlüsselung
+
+>- Sichere Verbindungen stellen sicher, dass übertragene Daten während der Übertragung vor unbefugtem Zugriff geschützt sind.
+>- Verschlüsselung ist eine Methode zur Datenverschlüsselung, die sicherstellt, dass nur berechtigte Personen die Informationen entschlüsseln und lesen können. Häufig verwendete Protokolle für sichere Verbindungen sind HTTPS, SSL/TLS.
+
 ### 1.8.4 Fachbegriff VPN
+
+>VPN (Virtual Private Network) ist eine Technologie, die eine sichere Verbindung über ein öffentliches Netzwerk (wie das Internet) hinweg ermöglicht. Ein VPN verschlüsselt den Datenverkehr, sodass er privat und sicher bleibt, selbst wenn er über ungesicherte Netzwerke wie das Internet übertragen wird.
+
 ### 1.8.5 Fachbegriff Intranet
+
+>Intranet ist ein privates Netzwerk, das innerhalb einer Organisation verwendet wird, um Informationen, Betriebssysteme oder Dienste nur innerhalb dieser Organisation zu teilen. Es verwendet dieselbe Technologie wie das Internet, ist aber durch Firewalls vom öffentlichen Internet abgeschirmt.
+
 ### 1.8.6 Kenntnisse über Schnittstellen, Übertragungstechnologien
+
+>- Schnittstellen sind Hardware- oder Softwarekomponenten, die es verschiedenen Teilen eines Computersystems ermöglichen, miteinander zu kommunizieren.
+>- Übertragungstechnologien umfassen verschiedene Methoden und Standards zur Datenübertragung, wie Ethernet, WiFi, Bluetooth, 3G/4G/5G, und viele andere.
+
 ### 1.8.7 Vor- und Nachteile Hosting-/Cloud-Lösungen
+
+>- **Vorteile:**
+>- Skalierbarkeit: Schnelle Anpassung der Ressourcen an wechselnde Anforderungen.
+>- Kosteneffizienz: Keine Notwendigkeit, in Hardware zu investieren; Zahlung nur für genutzte Ressourcen.
+>- Zugänglichkeit: Von überall und jederzeit Zugriff auf Daten und Anwendungen.
+
+>**Nachteile:**
+>- Abhängigkeit von Internetverbindungen: Erfordert eine ständige Internetverbindung.
+>- Sicherheitsbedenken: Potenzielle Risiken durch Datenlecks oder Hacks.
+>- Kontrollverlust: Daten und Anwendungen befinden sich auf den Servern eines Drittanbieters.
+
 ### 1.8.8 Voraussetzungen zur Nutzung von Clouddiensten
+
+>- Internetverbindung: Eine robuste und zuverlässige Internetverbindung ist entscheidend.
+>- Kompatible Hardware und Software: Geräte und Betriebssysteme müssen kompatibel mit den Anforderungen des Clouddienstes sein.
+>- Sicherheitsmaßnahmen: Geeignete Sicherheitsprotokolle und Authentifizierungsverfahren sollten implementiert sein, um Daten zu schützen.
+>- Technisches Know-how: Ein grundlegendes Verständnis der Funktionsweise von Cloud-Diensten ist notwendig, um diese effektiv zu nutzen.
 
 ## 1.9 Benutzerendgeräte und Peripheriegeräte
 
