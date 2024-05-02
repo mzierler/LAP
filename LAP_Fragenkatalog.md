@@ -2445,3 +2445,4 @@ Die Begriffe "flüchtiger Speicher" und "nichtflüchtiger Speicher" beziehen sic
 ### 1.25.8 Problemmanagement
 
 >**Problemmanagement** ist ein Prozess in der IT-Serviceverwaltung, der darauf abzielt, die Ursachen von Vorfällen zu identifizieren und zu beheben, um Wiederholungen zu verhindern. Es umfasst das Erkennen von Problemen, die Ursachenanalyse und die Entwicklung von Lösungen oder Umgehungen.
+

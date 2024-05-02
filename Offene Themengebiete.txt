@@ -1,65 +1,4 @@
-1 Benutzerendgeräte und Peripheriegeräte (Vertiefung)
-
-1.1 Hardwaresysteme
-Fachbegriff Multicore-Prozessor
-Unterschiede Desktop-/Server-Prozessoren
-Aufbau und Funktionsweise eines Mainboards
-Fachbegriff Chipset
-Fachbegriffe Jumper, DIP-Schalter
-Kenntnisse über den Fachbegriff Formfaktor in Zusammenhang mit Mainboards
-Kenntnisse über ATX/Micro-ATX-Formfaktor in Zusammenhang mit Mainboards
-Funktionsweise von auf Mainboards befindlichen Bussystemen
-Kenntnisse über die wesentlichen UEFI-Einstellungen
-Funktionsprinzip eines Plotters
-Funktionsprinzip der Bubblejet-Technik/Piezo-Technik (Tintenstrahldrucker)
-Funktionsprinzip eines 3D-Druckers
-Fachbegriffe Interpolation, TWAIN, OCR im Zusammenhang mit Scannern
-Kenntnisse über Funktionsweise und Leistungsdaten eines Netzteiles
-Aufbau und Funktionsweise einer HDD (Umdrehungszahl, Zugriffszeit, Schnittstellen, …)
-Aufbau und Funktionsweise einer SSD
-Fachbegriffe TLC, MLC, SLC in Zusammenhang mit SSD
-Kenntnis der aktuellen SATA-Standards
-Fachbegriff Modem
-Fachbegriff BD-ROM
-Kenntnisse über Schreibformate BD-R, BD-RE
-Kenntnisse über Regionalcodes in Zusammenhang mit DVD/BD
-Kenntnis der Technologie von LCD-Bildschirmen
-Fachbegriff Full-HD bzw. UHD
-Kenntnisse über die Schnittstellen HDMI, Display-Port und Thunderbolt
-Funktion und Aufbau der seriellen Schnittstelle
-Funktion der USB-Schnittstelle und aktuelle USB-Spezifikationen
-Funktion und Spezifikation der Firewire-Schnittstelle
-
-1.2Betriebssysteme und Software
-Kenntnisse über Server-Betriebssysteme
-Fachbegriff Firmware
-Kenntnis der durch das Betriebssystem gesteuerten Energiespar-Möglichkeiten
-Kenntnisse über die Linux-Shell Bash
-Fachbegriff Journaling-Dateisystem
-Fachbegriff CIFS
-Fachbegriff ext4
-Fachbegriff APFS
-
-1.3Betreuung von mobiler Hardware
-Kenntnisse über MDM
-Fachbegriff Convertible
-Kenntnis der Merkmale von Mobile-Prozessoren
-Fachbegriffe E-Ink, OLED
-Fachbegriff Edge, 3G bzw. UMTS, 4G bzw. LTE, 5G
-Fachbegriff HSDPA
-Fachbegriff NFC
-Fachbegriff GPS/GPS-Tracking
-Kenntnisse über Daten-Zugriffsschutzmöglichkeiten bei Diebstahl von mobilen Endgeräten
-
 1.4Server-, Storage- und Rechenzentren
-Kenntnis der Unterschiede von Rackmount-Server und Blade-Server
-Fachbegriff SAN
-Kenntnisse über NAS-Systeme und deren Einsatzbereiche
-Fachbegriff Snapshot
-Fachbegriff Daten-Redundanz
-Fachbegriff RAID-Level (0/1/5)
-Fachbegriffe Hot-Plugging und Hot-Spare
-Fachbegriff Teaming in Zusammenhang mit Netzwerk-Ports
 Unterscheidung von Offline- und Online-USV-Anlagen
 Kenntnisse über optimale Klimatisierung in Rechenzentren
 Kenntnisse über Zutrittsschutz/Zutrittskontrolle bei Rechenzentren
@@ -106,45 +45,6 @@ Standortwahl bei WLAN-Aufbau in Gebäuden
 Fachbegriff Roaming in Zusammenhang mit Access-Points
 Fachbegriff MAC-Filtering
 Kenntnisse über VPN und Tunneling
-
-2.2Netzwerkdienste
-Funktionsprinzip eines LDAP-Servers
-Funktionsprinzip eines Print-Servers
-Kenntnisse über TFTP
-Kenntnisse über SSH/Telnet
-Kenntnisse über RDP
-Kenntnisse über NFS
-Kenntnisse über SMB
-Fachbegriff NTP
-Fachbegriff VoIP
-Kenntnisse über die energieeffiziente Planung von IT-Systemen (Green-IT)
-
-2.3Systemadministration
-Kenntnisse über Active-Directory
-Fachbegriffe Rollen und Features bei Windows Server
-Konfiguration der IP-Adresse und zugehöriger Netzwerkeinstellungen
-Einrichten eines Backup-Jobs
-Installation und Aktualisierung von Treibern
-Vorgangsweise bei Installation neuer Sicherheits-Patches
-Vorgangsweise bei Installation von Service-Packs
-Kenntnisse über die Registry
-Anlegen neuer Benutzerprofile
-Konfiguration eines neuen Mailkontos
-
-3 IT-Management
-Kenntnisse über Fachbegriff ITIL
-Fachbegriff CMDB
-Fachbegriff CI in Zusammenhang mit ITIL
-Fachbegriff Incident
-Fachbegriff Change
-Fachbegriff Problem
-Fachbegriff Assetmanagement
-Fachbegriff SLA
-Kenntnis der am IT-Arbeitsmarkt anerkannten Schulungs-Zertifizierungen
-Erstellen von Bedienungsanleitungen für Anwendungen
-Erstellen von Inbetriebnahme-Protokollen von IT-Systemen
-Kenntnisse über wesentliche Inhalte von Wartungsverträgen
-Erstellen von Netzwerkplänen, Kenntnis technischer Symbole
 
 1 Benutzerendgeräte und Peripheriegeräte (Vertiefung)
 Einrichten von Benutzerendgeräten
